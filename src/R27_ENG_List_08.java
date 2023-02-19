@@ -19,7 +19,7 @@ public class R27_ENG_List_08 {
         sb2 = new StringBuilder(sb2.toString().replaceAll("[.]", ""));
         System.out.print(sb2.reverse());
         sb2 = new StringBuilder(sb2.toString().replaceAll(" ", ""));
-        if (sb2.toString().toLowerCase().equals(sb2.reverse().toString().toLowerCase()))
+        if (sb2.toString().equalsIgnoreCase(sb2.reverse().toString()))
             System.out.println("\nIt is Palindrome.");
         else System.out.println(".\nIt is not a palindrome\"");
 
