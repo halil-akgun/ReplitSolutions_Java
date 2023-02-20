@@ -1,4 +1,3 @@
-
 /*
 Write a return method that accepts more than one integer as parameter and prints the sum of integers
  Method name = sum
