@@ -18,10 +18,10 @@ public class R48_TR_If_Switch_Ternary_StringMethods_2 {
         Scanner scanner = new Scanner(System.in);
         String[] nameArr = scanner.nextLine().split(" ");
         String ccn = scanner.nextLine();
-        String name = "";
+        StringBuilder name = new StringBuilder();
         for (String w : nameArr) {
-            name += w.substring(0, 1).toUpperCase();
-            name += "*".repeat(w.length() - 1) + " ";
+            name.append(w.substring(0, 1).toUpperCase());
+            name.append("*".repeat(w.length() - 1)).append(" ");
         }
         System.out.println(name);
         System.out.println("CCN  : **** **** **** " + ccn.substring(ccn.length() - 4));
